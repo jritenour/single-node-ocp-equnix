@@ -50,14 +50,14 @@ openshift-install create single-node-ignition-config --dir=sno-working
 
 echo Downloading latest CoreOS live kernel
 
-sudo wget https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.9/latest/rhcos-4.9.0-x86_64-live-kernel-x86_64 -P /var/www/html 
+sudo wget https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/$OCP_VERSION/latest/rhcos-$OCP_VERSION.0-x86_64-live-kernel-x86_64 -P /var/www/html 
 
 echo Downloading latest CoreOS live root file system 
-sudo wget https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.9/latest/rhcos-4.9.0-x86_64-live-rootfs.x86_64.img -P /var/www/html
+sudo wget https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/$OCP_VERSION/latest/rhcos-$OCP_VERSION.0-x86_64-live-rootfs.x86_64.img -P /var/www/html
 
 echo Downloading latest CoreOS live init image
 
-sudo wget https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.9/latest/rhcos-4.9.0-x86_64-live-initramfs.x86_64.img -P /var/www/html
+sudo wget https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/$OCP_VERSION/latest/rhcos-$OCP_VERSION.0-x86_64-live-initramfs.x86_64.img -P /var/www/html
 
 echo Copying ignition to www root
 
